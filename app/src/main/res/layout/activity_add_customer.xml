@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5EFE9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add New Customer"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#111111"
+            android:layout_marginTop="20dp"/>
+
+        <!-- Customer Name -->
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="40dp"
+            android:hint="Customer Name"
+            android:textSize="20sp"
+            android:padding="20dp"
+            android:background="@drawable/edit_bg"
+            android:inputType="textPersonName"/>
+
+        <!-- Country Picker -->
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/countryCodePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:ccp_showFlag="true"
+            app:ccp_showPhoneCode="true"/>
+
+        <!-- Phone -->
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:hint="Phone Number"
+            android:textSize="20sp"
+            android:padding="20dp"
+            android:background="@drawable/edit_bg"
+            android:inputType="phone"
+            android:maxLength="15"/>
+
+        <!-- Save Button -->
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Save Customer"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#FF6B00"/>
+
+    </LinearLayout>
+
+</ScrollView>
